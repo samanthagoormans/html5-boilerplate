@@ -1,0 +1,42 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+
+
+$blue: #4e84cc;
+//$lightBlue: ;
+$white: #ffffff;
+
+.navbar {
+  border-top: 2px solid $blue;
+  border-radius: 0;
+  
+  .navbar-brand {
+    background: url(../img/logo.png) no-repeat;
+    background-size: 100px 22px;
+    width: 100px;
+    height: 22px;
+    display: block;
+    margin-top: 14px;
+  }
+  
+  li.active {
+    a {
+      color: $blue !important;
+      border-bottom: 2px solid $blue !important;
+      background: none !important;
+    }
+  }
+  
+  li {
+    a:hover {
+      color: $blue !important;
+      border-bottom: 2px solid $blue !important;
+      background: none !important;
+    }
+  }
+}
